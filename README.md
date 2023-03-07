@@ -8,11 +8,8 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
-  - [Usage](#usage)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -23,12 +20,16 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Project Name] <a name="about-project"></a>
+# 📖 OOP School Library <a name="about-project"></a>
 
 
 
 
-**[Projec Name]** is a simple react application that lets you use a calculator online.
+**OOP School Library:** Imagine that you are the librarian of OOP University, and you need a tool to record what books are in the library and who borrows them. This app will allow you to:
+
+- Add new students or teachers.
+- Add new books.
+- Save records of who borrowed a given book and when.
 
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -38,21 +39,7 @@
 <details>
   <summary>Functionality</summary>
   <ul>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Front End</summary>
-  <ul>
-    <li><a href="https://reactjs.org/docs/getting-started.html">React</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Styling</summary>
-  <ul>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+    <li><a href="https://ruby-doc.org/3.2.1/">Ruby</a></li>
   </ul>
 </details>
 
@@ -60,19 +47,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Single page app**
-- **Compact**
-- **Simple to use**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-
-- Check the live demo [here]()
-
+- **Classes**
+- **Inheritance**
+- **Compositons**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -86,7 +63,7 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-NodeJs
+Ruby
 
 ### Setup
 
@@ -94,48 +71,15 @@ Clone this repository to your desired folder:
 
 
 ```cd my-folder   
-    git clone git@github.com:Vgonma/math-magician.git
-    cd leaderboard
+    git clone git@github.com:Vgonma/OOP-school-library.git
+    cd OOP-school-library
 ```
 Install dependencies:
 ```
-    npm i
+    bundle install
 ```
 
-## Available Scripts
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### Usage
-
-To run the project open the html file in your web browser.
-
-### Deployment
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
@@ -153,9 +97,8 @@ To run the project open the html file in your web browser.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Feature 1**
-- [ ] **Feature 2**
-- [ ] **Feature 3**
+- [ ] **UML Class Diagrams**
+- [ ] **State flow diagrams**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
