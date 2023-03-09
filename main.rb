@@ -1,33 +1,65 @@
-require './lib/person'
-require './lib/student'
-require './lib/teacher'
-require './lib/capitalize_decorator'
-require './lib/trimmer_decorator'
-require './lib/classroom'
-require './lib/book'
-require './lib/rental'
+require './lib/app'
+def main_menu
+  puts "\n-----------------------------------\nPick an option by entering a number:"
+  print("
+  1 - List all books
+  2 - List all people
+  3 - Add a book
+  4 - Add a person
+  5 - Rent a book
+  6 - List rents of a person
+  0 - Exit
+  ")
+end
 
-# person = Person.new(15, 'Person', parent_permission: false)
-# student = Student.new(15, 'classroom-name', 'Student', parent_permission: false)
-# teacher = Teacher.new(15, 'spec-name', 'Teacher', parent_permission: false)
+def add_person(app)
+  puts "Add a:\n1) Student\n2) Teacher"
+  option = gets.chomp.to_i
+  case option
+  when 1
+    app.create_student
+  when 2
+    app.create_teacher
+  else
+    puts 'Invalid option'
+  end
+end
 
-# p person.can_use_services?
-# p student.can_use_services?
-# p teacher.can_use_services?
+def list_rentals_per_person_id(app)
+  puts('Insert ID or -1 to return')
+  id = gets.chomp.to_i
+  return app.list_rentals_per_person_id(id) if id.positive?
+end
 
-student = Student.new(22, 'Math', 'maximilianus')
-classroom = Classroom.new('Math')
+def run_menu(app, option)
+  case option
+  when 1
+    app.list_books
+  when 2
+    app.list_people
+  when 3
+    app.create_book
+  when 4
+    add_person(app)
+  when 5
+    app.create_rental
+  when 6
+    list_rentals_per_person_id(app)
+  else
+    puts 'Invalid option. Enter a valid number.'
+  end
+end
 
-classroom.add_student(student)
-p classroom.students
-p student.classroom
-print("\n========================\n\n")
+def main
+  option = -1
+  app = App.new
+  until option.zero?
+    main_menu
+    option = gets.chomp.to_i
+    puts ''
+    run_menu(app, option) unless option.zero?
+  end
+  puts 'Closing...'
+end
 
-person = Person.new(23, 'Maria')
-book = Book.new('Lord of the Rings', 'Tolkien')
-rental = Rental.new('3/8/2023', book, person)
-person.add_rental(rental)
-
-p person.rentals
-puts("\n")
-p book.rentals
+main
