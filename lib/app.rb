@@ -26,7 +26,7 @@ class App
 
   def create_student
     print('Name: ')
-    name = gets.chomp
+    gets.chomp
     print('Age: ')
     age = gets.chomp
     print('Has parent permission [Y/N]: ')
