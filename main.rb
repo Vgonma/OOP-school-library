@@ -59,7 +59,7 @@ def main
     puts ''
     run_menu(app, option) unless option.zero?
   end
-  puts 'Closing...'
+  puts 'Thank you for using this app'
 end
 
 main
